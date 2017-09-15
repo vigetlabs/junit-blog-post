@@ -1,0 +1,11 @@
+{
+  "name": "junit-blog-post",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.6.1",
+    "jest": "^21.1.0",
+    "jest-junit": "^3.0.0"
+  }
+}
