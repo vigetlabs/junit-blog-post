@@ -18,6 +18,8 @@ jobs:
       - run:
           name: "JavaScript Lint"
           command: yarn lint --format junit -o tmp/js-lint-results.xml
+      - store_test_results:
+          path: /tmp/js-lint-results.xml
       - run:
           name: "JavaScript Test Suite"
           command: yarn test --ci --testResultsProcessor="jest-junit"
