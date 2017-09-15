@@ -4,9 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src"
   },
   "devDependencies": {
+    "babel-eslint": "^8.0.0",
     "eslint": "^4.6.1",
     "jest": "^21.1.0",
     "jest-junit": "^3.0.0"
