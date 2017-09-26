@@ -18,11 +18,11 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
           name: "JavaScript Linter"
-          command: yarn lint --format junit -o ~/junit/js-lint-results.xml
+          command: yarn lint --format junit -o "~/junit/js-lint-results.xml"
       - run:
           name: "JavaScript Test Suite"
           environment:
-            JEST_JUNIT_OUTPUT: ~/junit/js-test-results.xml
+            JEST_JUNIT_OUTPUT: "~/junit/js-test-results.xml"
           command: yarn test --ci --testResultsProcessor="jest-junit"
       - store_test_results:
           path: ~/junit
